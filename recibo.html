@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<style>
+    .rechead{
+        width: 1087px;
+        text-align: center;
+        border: 1px solid;
+        margin-bottom: 3px;
+        font-family: Lucida Sans;
+    
+    }
+
+    .recbody{
+        width: 1087px;
+        height: 400px;
+        border: 1px solid;
+        font-family: Lucida Sans;
+        font-size: 17px;
+    }
+</style>
+<head>
+    <title>Tu Recibo</title>
+</head>
+<body>
+    <div class="rechead">
+        <h3 style="margin-bottom: -15px; font-size: 25px; letter-spacing: 7px;">INVERSIONES GUZMAN</h3>
+        <p style="margin-bottom: -15px; font-size: 18px; letter-spacing: 3px;">Prestamos al Comerciante</p>
+        <p style= "font-size: 18px; letter-spacing: 3px;">809-336-1129</p>
+    </div>
+    <div class="recbody">
+                <div style="position: absolute; left: 29px; top: 150px;">No. de Recibo :</div>
+                <span style="font-size: large; position:absolute; left:182px; top: 150px;" id="result"></span>
+                <div style="position: absolute; left: 29px; top: 180px;">Ruta :</div>
+                <span style="font-size: large; position:absolute; left:182px; top: 180px;" id="result2"></span>
+                <div style="position: absolute; left: 29px; top: 210px;">Cédula:</div>
+                <span style="font-size: large; position:absolute; left:182px; top: 210px;" id="result3"></span>
+                <div style="position: absolute; left: 400px; top: 240px;">Teláfono:</div>
+                <span style="font-size: large; position:absolute; left:482px; top: 240px;" id="result4"></span>
+                <div style="position: absolute; left: 29px; top: 270px;">Cliente:</div>
+                <span style="font-size: large; position:absolute; left:182px; top: 270px;" id="result5"></span>
+                <div style="position: absolute; left: 29px; top: 300px;">Lugar de trabajo:</div>
+                <span style="font-size: large; position:absolute; left:182px; top: 300px;" id="result6"></span>
+                <div style="position: absolute; left: 80px; top: 370px;">Inicio... :</div>
+                <span style="font-size: large; position:absolute; left:182px; top: 370px;" id="result7"></span>
+                <div style="position: absolute; left: 80px; top: 400px;">Final.... :</div>
+                <span style="font-size: large; position:absolute; left:182px; top: 400px;" id="result8"></span>
+                <div style="position: absolute; left: 80px; top: 430px;">Monto Prestado :</div>
+                <span style="font-size: large; position:absolute; left:240px; top: 430px;" id="result9"></span>
+                <h2 style="position: absolute; left: 80px; top: 445px; letter-spacing: 7px;">Semana No. :</h2>
+                <span style="font-size: larger; position:absolute; left:350px; top: 473px;" id="result10"></span>
+                <div style="position: absolute; left: 800px; top: 150px;">Fecha :</div>
+                <span style="font-size: large; position:absolute; left:870px; top: 150px;" id="result11"></span>
+                <div style="position: absolute; left: 670px; top: 230px;">Código :</div>
+                <span style="font-size: large; position:absolute; left:765px; top: 230px;" id="result12"></span>
+                <div style="position: absolute; left: 670px; top: 260px;">Dirección :</div>
+                <span style="font-size: large; position:absolute; left:765px; top: 260px;" id="result13"></span>
+                <div style="position: absolute; left: 700px; top: 350px;">Pago Semanal.. :</div>
+                <span style="font-size: large; position:absolute; left:900px; top: 350px;" id="result14"></span>
+                <div style="position: absolute; left: 700px; top: 380px;">Atraso............. :</div>
+                <span style="font-size: large; position:absolute; left:900px; top: 380px;" id="result15"></span>
+                <div style="position: absolute; left: 870px; top: 397px;">______________________</div>
+                <span style="font-size: large; position:absolute; left:900px; top: 420px;" id="result16"></span>
+    </div>
+</body>
+
+<script>
+    document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+    document.getElementById("result2").innerHTML=localStorage.getItem("textvalue2");
+    document.getElementById("result3").innerHTML=localStorage.getItem("textvalue3");
+    document.getElementById("result4").innerHTML=localStorage.getItem("textvalue4");
+    document.getElementById("result5").innerHTML=localStorage.getItem("textvalue5");
+    document.getElementById("result6").innerHTML=localStorage.getItem("textvalue6");
+    document.getElementById("result7").innerHTML=localStorage.getItem("textvalue7");
+    document.getElementById("result8").innerHTML=localStorage.getItem("textvalue8");
+    document.getElementById("result9").innerHTML=localStorage.getItem("textvalue9");
+    document.getElementById("result10").innerHTML=localStorage.getItem("textvalue10");
+    document.getElementById("result11").innerHTML=localStorage.getItem("textvalue11");
+    document.getElementById("result12").innerHTML=localStorage.getItem("textvalue12");
+    document.getElementById("result13").innerHTML=localStorage.getItem("textvalue13");
+    document.getElementById("result14").innerHTML=localStorage.getItem("textvalue14");
+    document.getElementById("result15").innerHTML=localStorage.getItem("textvalue15");
+    document.getElementById("result16").innerHTML=localStorage.getItem("textvalue16");
+</script>
