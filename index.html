@@ -2,6 +2,8 @@
 
 <style>
     .rechead{
+        position: absolute;
+        top:100px;
         width: 1087px;
         text-align: center;
         border: 1px solid;
@@ -11,18 +13,19 @@
     }
 
     .recbody{
+        position: absolute;
+        top: 220px;
         min-width: 1087px;
         max-width: 1088px;
         height: 400px;
         border: 1px solid;
         font-family: Lucida Sans;
         font-size: 17px;
-        
     }
 
     .boton{
         position: absolute;
-        top:640px;
+        top:440px;
         left: 500px;
         width: 150px;
         height: 40px;
@@ -92,7 +95,7 @@
         </script>
     </head>
     <body>
-        <h1 style="text-align: center;">RECIBO MANUAL</h1>
+        <h1>RECIBO MANUAL:</h1>
 
         <div class="rechead">
             <h3 style="margin-bottom: -15px; font-size: 25px; letter-spacing: 7px;">INVERSIONES GUZMAN</h3>
@@ -102,38 +105,38 @@
 
         <div class="recbody">
             <form action="recibo.html" method="get">
-                <div style="position:absolute; left: 29px; top: 220px;">No. de Recibo :</div>
-                <input style="font-size: large; height: 18px; width: 37px; position:absolute; left:182px; top: 218px;" type="number" max="99" min="1" id="Nr" autofocus>
-                <div style="position:absolute; left: 29px; top: 250px;">Ruta :</div>
-                <input style="font-size: large; height: 18px; width: 170px; position:absolute; left:182px; top: 248px;" type="text" maxlength="15"  id="Rt" >
-                <div style="position:absolute; left: 29px; top: 280px;">Cédula:</div>
-                <input style="font-size: large; height: 18px; width: 170px; position:absolute; left: 182px; top: 278px;" type="text" maxlength="13" id="Ced" >
-                <div style="position:absolute; left: 400px; top: 280px;">Teláfono:</div>
-                <input style="font-size: large; height: 18px; width: 170px; position:absolute; left: 482px; top: 278px;" type="text" maxlength="13" id="Tel" >
-                <div style="position:absolute; left: 29px; top: 310px;">Cliente:</div>
-                <input style="font-size: large; height: 18px; width: 270px; position:absolute;  left: 182px; top: 308px;" type="text" maxlength="31" id="Cli" >
-                <div style="position:absolute; left: 29px; top: 340px;">Lugar de trabajo:</div>
-                <input style="font-size: large; height: 18px; width: 270px; position:absolute;  left: 182px; top: 338px;" type="text" maxlength="25" id="Lgt" >
-                <div style="position:absolute; left: 80px; top: 410px;">Inicio... :</div>
-                <input style="font-size: large; height: 18px; width: 170px; position:absolute;  left: 182px; top: 410px;" type="text" maxlength="10" id="Start" 
-                <div style="position:absolute; left: 80px; top: 440px;">Final.... :</div>
-                <input style="font-size: large; height: 18px; width: 170px; position:absolute;  left: 182px; top: 440px;" type="text" maxlength="10" id="End" >
-                <div style="position: absolute; left: 80px; top: 480px;">Monto Prestado :</div>
-                <input style="font-size: large; height: 18px; width: 110px; position:absolute; left:240px; top: 480px;" type="text" maxlength="10" id="Amt" >
-                <h2 style="position: absolute; left: 80px; top: 523px; letter-spacing: 7px;">Semana No. :</h2>
-                <input style="font-size: larger; height: 30px; width: 30px; position:absolute; left:350px; top: 540px;" type="text" maxlength="2" id="Week" >
-                <div style="position: absolute; left: 800px; top: 220px;">Fecha :</div>
-                <input style="font-size: large; height: 18px; width: 110px; position:absolute; left:870px; top: 218px;" type="text" maxlength="20" id="date" >
-                <div style="position: absolute; left: 670px; top: 300px;">Código :</div>
-                <input style="font-size: large; height: 18px; width: 70px; position:absolute; left:765px; top: 300px;" type="number" max="999" min="0" id="Code" 
-                <div style="position: absolute; left: 670px; top: 330px;">Dirección :</div>
-                <input style="font-size: large; height: 18px; width: 310px; position:absolute; left:765px; top: 330px;" type="text" maxlength="50" id="Addr" >
-                <div style="position: absolute; left: 700px; top: 420px;">Pago Semanal.. :</div>
-                <input style="font-size: large; height: 18px; width: 110px; position:absolute; left:900px; top: 420px;" type="text" maxlength="10" id="Pwk" >
-                <div style="position: absolute; left: 700px; top: 450px;">Atraso............. :</div>
-                <input style="font-size: large; height: 18px; width: 110px; position:absolute; left:900px; top: 450px;" type="text" maxlength="10" id="Atr" >
-                <div style="position: absolute; left: 870px; top: 467px;">______________________</div>
-                <input style="font-size: large; height: 18px; width: 110px; position:absolute; left:900px; top: 490px;" type="text" maxlength="10" id="Rsult" 
+                <div style="position:absolute; left: 29px; top: 20px;">No. de Recibo :</div>
+                <input style="font-size: large; height: 18px; width: 37px; position:absolute; left:182px; top: 18px;" type="number" max="99" min="1" id="Nr" autofocus>
+                <div style="position:absolute; left: 29px; top: 50px;">Ruta :</div>
+                <input style="font-size: large; height: 18px; width: 170px; position:absolute; left:182px; top: 48px;" type="text" maxlength="15"  id="Rt" >
+                <div style="position:absolute; left: 29px; top: 80px;">Cédula:</div>
+                <input style="font-size: large; height: 18px; width: 170px; position:absolute; left: 182px; top: 78px;" type="text" maxlength="13" id="Ced" >
+                <div style="position:absolute; left: 380px; top: 80px;">Teláfono:</div>
+                <input style="font-size: large; height: 18px; width: 170px; position:absolute; left: 482px; top: 78px;" type="text" maxlength="13" id="Tel" >
+                <div style="position:absolute; left: 29px; top: 110px;">Cliente:</div>
+                <input style="font-size: large; height: 18px; width: 270px; position:absolute;  left: 182px; top: 108px;" type="text" maxlength="31" id="Cli" >
+                <div style="position:absolute; left: 29px; top: 140px;">Lugar de trabajo:</div>
+                <input style="font-size: large; height: 18px; width: 270px; position:absolute;  left: 182px; top: 138px;" type="text" maxlength="25" id="Lgt" >
+                <div style="position:absolute; left: 29px; top: 210px;">Inicio... :</div>
+                <input style="font-size: large; height: 18px; width: 170px; position:absolute;  left: 182px; top: 208px;" type="text" maxlength="10" id="Start" >
+                <div style="position:absolute; left: 29px; top: 240px;">Final.... :</div>
+                <input style="font-size: large; height: 18px; width: 170px; position:absolute;  left: 182px; top: 238px;" type="text" maxlength="10" id="End" >
+                <div style="position: absolute; left: 29px; top: 270px;">Monto Prestado :</div>
+                <input style="font-size: large; height: 18px; width: 110px; position:absolute; left:182px; top: 268px;" type="text" maxlength="10" id="Amt" >
+                <h2 style="position: absolute; left: 29px; top: 313px; letter-spacing: 7px;">Semana No. :</h2>
+                <input style="font-size: larger; height: 30px; width: 30px; position:absolute; left:320px; top: 328px;" type="text" maxlength="2" id="Week" >
+                <div style="position: absolute; left: 800px; top: 20px;">Fecha :</div>
+                <input style="font-size: large; height: 18px; width: 200px; position:absolute; left:870px; top: 18px;" type="text" maxlength="20" id="date" >
+                <div style="position: absolute; left: 670px; top: 100px;">Código :</div>
+                <input style="font-size: large; height: 18px; width: 70px; position:absolute; left:765px; top: 100px;" type="number" max="999" min="0" id="Code">
+                <div style="position: absolute; left: 670px; top: 130px;">Dirección :</div>
+                <input style="font-size: large; height: 18px; width: 310px; position:absolute; left:765px; top: 130px;" type="text" maxlength="50" id="Addr" >
+                <div style="position: absolute; left: 700px; top: 220px;">Pago Semanal.. :</div>
+                <input style="font-size: large; height: 18px; width: 110px; position:absolute; left:900px; top: 220px;" type="text" maxlength="10" id="Pwk" >
+                <div style="position: absolute; left: 700px; top: 250px;">Atraso............. :</div>
+                <input style="font-size: large; height: 18px; width: 110px; position:absolute; left:900px; top: 250px;" type="text" maxlength="10" id="Atr" >
+                <div style="position: absolute; left: 870px; top: 267px;">______________________</div>
+                <input style="font-size: large; height: 18px; width: 110px; position:absolute; left:900px; top: 290px;" type="text" maxlength="10" id="Rsult"> 
                 <input class="boton" type="submit" value="Vista Previa" onclick="passvalues();">
             </form>
             
